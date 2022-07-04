@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/searchProfilePic"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/searchProfilePic"
+        android:padding="5dp"
+        android:background="?android:attr/windowBackground"
+        android:id="@+id/searchProfileLayout"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="username"
+            android:textSize="16sp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:id="@+id/usernameText"
+            android:textStyle="bold"
+            android:maxLines="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="16sp"
+            android:id="@+id/fullnameText"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="follow"
+        android:textSize="12sp"
+        android:backgroundTint="#F6F4F4"
+        android:background="@android:color/white"
+        android:textColor="#0C436E"
+        android:textAlignment="gravity"
+        android:visibility="gone"></Button>
+
+
+</RelativeLayout>
+
